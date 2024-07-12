@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    web:
+       image: "juliandeca/web2-decastelli:latest" 
+       ports:
+           - "8080:80" 
+       volumes:
+           - "/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/docker/web/file"
+           - "/usr/share/nginx/html/file/"

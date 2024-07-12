@@ -1,0 +1,136 @@
+2024-07-12 15:10:23,647 p=4934 u=decastelli n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-12 15:10:23,890 p=4934 u=decastelli n=ansible | PLAY [all] *******************************************************************************************************************
+2024-07-12 15:10:23,904 p=4934 u=decastelli n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2024-07-12 15:10:25,410 p=4934 u=decastelli n=ansible | ok: [localhost]
+2024-07-12 15:10:26,024 p=4934 u=decastelli n=ansible | ok: [127.0.0.1]
+2024-07-12 15:10:26,064 p=4934 u=decastelli n=ansible | TASK [include_role : 2PRecuperatorio] ****************************************************************************************
+2024-07-12 15:10:26,128 p=4934 u=decastelli n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected <document start>
+
+The error appears to be in '/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/ansible/roles/2PRecuperatorio/tasks/main.yml': line 8, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Agrego archivo desde template"
+^ here
+
+2024-07-12 15:12:06,747 p=5290 u=decastelli n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-12 15:12:06,910 p=5290 u=decastelli n=ansible | PLAY [all] *******************************************************************************************************************
+2024-07-12 15:12:06,920 p=5290 u=decastelli n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2024-07-12 15:12:08,393 p=5290 u=decastelli n=ansible | ok: [localhost]
+2024-07-12 15:12:08,830 p=5290 u=decastelli n=ansible | ok: [127.0.0.1]
+2024-07-12 15:12:08,861 p=5290 u=decastelli n=ansible | TASK [include_role : 2PRecuperatorio] ****************************************************************************************
+2024-07-12 15:12:08,902 p=5290 u=decastelli n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected <document start>
+
+The error appears to be in '/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/ansible/roles/2PRecuperatorio/tasks/main.yml': line 8, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Agrego archivo desde template"
+^ here
+
+2024-07-12 15:13:09,739 p=5562 u=decastelli n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-12 15:13:09,864 p=5562 u=decastelli n=ansible | PLAY [all] *******************************************************************************************************************
+2024-07-12 15:13:09,873 p=5562 u=decastelli n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2024-07-12 15:13:11,187 p=5562 u=decastelli n=ansible | ok: [localhost]
+2024-07-12 15:13:11,458 p=5562 u=decastelli n=ansible | ok: [127.0.0.1]
+2024-07-12 15:13:11,487 p=5562 u=decastelli n=ansible | TASK [include_role : 2PRecuperatorio] ****************************************************************************************
+2024-07-12 15:13:11,536 p=5562 u=decastelli n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] ********************************************************************************
+2024-07-12 15:13:11,555 p=5562 u=decastelli n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-12 15:13:11,565 p=5562 u=decastelli n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-12 15:13:11,573 p=5562 u=decastelli n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] ***********************************************************************
+2024-07-12 15:13:11,628 p=5562 u=decastelli n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2024-07-12 15:13:11,629 p=5562 u=decastelli n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Could not find or access 'template_01.j2'\nSearched in:\n\t/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/ansible/roles/2PRecuperatorio/templates/template_01.j2\n\t/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/ansible/roles/2PRecuperatorio/template_01.j2\n\t/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/ansible/roles/2PRecuperatorio/tasks/templates/template_01.j2\n\t/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/ansible/roles/2PRecuperatorio/tasks/template_01.j2\n\t/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/ansible/templates/template_01.j2\n\t/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/ansible/template_01.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2024-07-12 15:13:11,640 p=5562 u=decastelli n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2024-07-12 15:13:11,641 p=5562 u=decastelli n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "Could not find or access 'template_01.j2'\nSearched in:\n\t/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/ansible/roles/2PRecuperatorio/templates/template_01.j2\n\t/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/ansible/roles/2PRecuperatorio/template_01.j2\n\t/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/ansible/roles/2PRecuperatorio/tasks/templates/template_01.j2\n\t/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/ansible/roles/2PRecuperatorio/tasks/template_01.j2\n\t/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/ansible/templates/template_01.j2\n\t/home/decastelli/UTN-FRA_SO_Examenes/202407_Recu/ansible/template_01.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2024-07-12 15:13:11,643 p=5562 u=decastelli n=ansible | PLAY RECAP *******************************************************************************************************************
+2024-07-12 15:13:11,644 p=5562 u=decastelli n=ansible | 127.0.0.1                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-12 15:13:11,644 p=5562 u=decastelli n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-12 15:15:41,485 p=5875 u=decastelli n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-12 15:15:41,611 p=5875 u=decastelli n=ansible | PLAY [all] *****************************************************************************************************************
+2024-07-12 15:15:41,620 p=5875 u=decastelli n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-07-12 15:15:42,902 p=5875 u=decastelli n=ansible | ok: [localhost]
+2024-07-12 15:15:43,788 p=5875 u=decastelli n=ansible | ok: [127.0.0.1]
+2024-07-12 15:15:43,824 p=5875 u=decastelli n=ansible | TASK [include_role : 2PRecuperatorio] **************************************************************************************
+2024-07-12 15:15:43,889 p=5875 u=decastelli n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] ******************************************************************************
+2024-07-12 15:15:43,912 p=5875 u=decastelli n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-12 15:15:43,922 p=5875 u=decastelli n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-12 15:15:43,933 p=5875 u=decastelli n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] *********************************************************************
+2024-07-12 15:15:44,755 p=5875 u=decastelli n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "checksum": "bcf7dafeddd9c6465ff5153816af4ed320b02c8e", "msg": "Destination directory /tmp/multi_Pruebas_borrame/config does not exist"}
+2024-07-12 15:15:44,824 p=5875 u=decastelli n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "checksum": "bcf7dafeddd9c6465ff5153816af4ed320b02c8e", "msg": "Destination directory /tmp/multi_Pruebas_borrame/config does not exist"}
+2024-07-12 15:15:44,826 p=5875 u=decastelli n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-07-12 15:15:44,826 p=5875 u=decastelli n=ansible | 127.0.0.1                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-12 15:15:44,826 p=5875 u=decastelli n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-12 15:17:11,689 p=6235 u=decastelli n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-12 15:17:11,815 p=6235 u=decastelli n=ansible | PLAY [all] *****************************************************************************************************************
+2024-07-12 15:17:11,823 p=6235 u=decastelli n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-07-12 15:17:13,153 p=6235 u=decastelli n=ansible | ok: [localhost]
+2024-07-12 15:17:13,637 p=6235 u=decastelli n=ansible | ok: [127.0.0.1]
+2024-07-12 15:17:13,667 p=6235 u=decastelli n=ansible | TASK [include_role : 2PRecuperatorio] **************************************************************************************
+2024-07-12 15:17:13,716 p=6235 u=decastelli n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] ******************************************************************************
+2024-07-12 15:17:13,736 p=6235 u=decastelli n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-12 15:17:13,745 p=6235 u=decastelli n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-12 15:17:13,753 p=6235 u=decastelli n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] *********************************************************************
+2024-07-12 15:17:14,431 p=6235 u=decastelli n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "checksum": "bcf7dafeddd9c6465ff5153816af4ed320b02c8e", "msg": "Destination directory /tmp/alumno does not exist"}
+2024-07-12 15:17:14,496 p=6235 u=decastelli n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "checksum": "bcf7dafeddd9c6465ff5153816af4ed320b02c8e", "msg": "Destination directory /tmp/alumno does not exist"}
+2024-07-12 15:17:14,498 p=6235 u=decastelli n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-07-12 15:17:14,498 p=6235 u=decastelli n=ansible | 127.0.0.1                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-12 15:17:14,498 p=6235 u=decastelli n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-12 15:22:22,981 p=6609 u=decastelli n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-12 15:22:23,111 p=6609 u=decastelli n=ansible | PLAY [all] *****************************************************************************************************************
+2024-07-12 15:22:23,121 p=6609 u=decastelli n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-07-12 15:22:24,397 p=6609 u=decastelli n=ansible | ok: [localhost]
+2024-07-12 15:22:24,901 p=6609 u=decastelli n=ansible | ok: [127.0.0.1]
+2024-07-12 15:22:24,931 p=6609 u=decastelli n=ansible | TASK [include_role : 2PRecuperatorio] **************************************************************************************
+2024-07-12 15:22:24,982 p=6609 u=decastelli n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] ******************************************************************************
+2024-07-12 15:22:25,001 p=6609 u=decastelli n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-12 15:22:25,013 p=6609 u=decastelli n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-12 15:22:25,021 p=6609 u=decastelli n=ansible | TASK [2PRecuperatorio : Crear directorios en /tmp/alumno/] *****************************************************************
+2024-07-12 15:22:25,387 p=6609 u=decastelli n=ansible | changed: [localhost]
+2024-07-12 15:22:25,435 p=6609 u=decastelli n=ansible | ok: [127.0.0.1]
+2024-07-12 15:22:25,443 p=6609 u=decastelli n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] *********************************************************************
+2024-07-12 15:22:26,151 p=6609 u=decastelli n=ansible | changed: [localhost]
+2024-07-12 15:22:26,204 p=6609 u=decastelli n=ansible | ok: [127.0.0.1]
+2024-07-12 15:22:26,227 p=6609 u=decastelli n=ansible | TASK [Otra tarea] **********************************************************************************************************
+2024-07-12 15:22:26,246 p=6609 u=decastelli n=ansible | ok: [127.0.0.1] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-12 15:22:26,258 p=6609 u=decastelli n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-12 15:22:26,335 p=6609 u=decastelli n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-07-12 15:22:26,335 p=6609 u=decastelli n=ansible | 127.0.0.1                  : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-12 15:22:26,336 p=6609 u=decastelli n=ansible | localhost                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

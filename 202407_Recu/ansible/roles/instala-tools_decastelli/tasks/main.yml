@@ -1,0 +1,15 @@
+---
+# tasks file for instala-tools_decastelli
+- debug:
+      msg: " ---- installacion_desarrollo ----"
+- name: "Instalar paquetes para programar" 
+  become: yes
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - htop
+    - net-tools
+    - tmux
+    - tree
+    - speedtest-cli     
